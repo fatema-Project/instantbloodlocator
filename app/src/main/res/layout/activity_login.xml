@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fffefe"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.loginActivity"
+    android:gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:src="@drawable/master" />
+
+    <TextView
+        android:id="@+id/ulogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="	#000000"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="USER LOGIN"/>
+
+
+    <EditText
+        android:id="@+id/ueid"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint=" Email Address"
+        android:textColorHint="			#2F4F4F"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/upassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:digits="abcdefghijklmnopqrstuvwxyz0123456789"
+        android:textColorHint="#2F4F4F"
+        android:hint=" Password"
+        android:maxLength="11"
+        android:textSize="20sp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="#E60808"
+        android:textColor="#eeeeee"
+        android:textStyle="bold"
+        android:text="SUBMIT"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Create New Account"
+        android:textColorHint="	#2F4F4F"
+        android:textSize="20sp"/>
+
+</LinearLayout>

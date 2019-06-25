@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fffefe"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.profileact2"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#c70000"
+            android:fadingEdge="horizontal|vertical"
+            android:padding="40dp"
+            android:text="Donate your Blood for a reason, Let the reason be Life"
+            android:textAlignment="center"
+            android:textColor="#ffe1e1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/need"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#E60808"
+            android:padding="10dp"
+            android:text="need"
+            android:textColor="#eeeeee"
+            android:textSize="30dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/respond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#E60808"
+            android:textColor="#eeeeee"
+            android:textStyle="normal"
+            android:text="respond"
+            android:textSize="30dp"
+            android:padding="10dp"/>
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#E60808"
+            android:textColor="#eeeeee"
+            android:textStyle="normal"
+            android:text="logout"
+            android:textSize="30dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewToken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E60808"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

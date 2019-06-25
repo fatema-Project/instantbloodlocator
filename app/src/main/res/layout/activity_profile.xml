@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffefe"
+    android:orientation="vertical"
+    tools:context=".Activities.profileAct"
+    android:layout_margin="20dp">
+
+
+    <TextView
+
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="WELCOME"
+        android:textColor="		#000000"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:digits="abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz"
+        android:hint=" FullName"
+        android:textColorHint="			#2F4F4F"
+        android:inputType="text"
+        android:maxLength="30"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/cotact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:digits="0123456789"
+        android:textColorHint="			#2F4F4F"
+        android:hint=" Contact"
+        android:inputType="numberDecimal"
+        android:maxLength="13"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/paddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint=" Permanent Address"
+        android:textColorHint="	#2F4F4F"
+        android:inputType="text"
+        android:maxLength="60"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/area"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:digits="abcdefghijklmnopqrstuvwxyz0123456789"
+        android:hint=" Area"
+        android:inputType="text"
+        android:textColorHint="		#2F4F4F"
+        android:maxLength="50"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/blood"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:digits="aboABO+-"
+        android:hint=" Blood Group"
+        android:inputType="text"
+        android:maxLength="2"
+        android:textColorHint="	#2F4F4F"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#E60808"
+        android:padding="10dp"
+        android:text="SAVE"
+        android:textColor="#eeeeee"
+        android:textSize="30sp" />
+
+
+</LinearLayout>
