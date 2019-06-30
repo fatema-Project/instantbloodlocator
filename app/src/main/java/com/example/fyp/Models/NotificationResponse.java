@@ -26,14 +26,6 @@ public class NotificationResponse {
         return multicastId;
     }
 
-    public Integer getSuccess() {
-        return success;
-    }
-
-    public Integer getFailure() {
-        return failure;
-    }
-
     public Integer getCanonicalIds() {
         return canonicalIds;
     }

@@ -4,7 +4,7 @@ public class UserRegistration {
 
     String fname;
     String area;
-    String contact;
+    String cotact;
     String blood;
     String paddress;
 
@@ -26,12 +26,12 @@ public class UserRegistration {
         this.area = area;
     }
 
-    public String getContact() {
-        return contact;
+    public String getCotact() {
+        return cotact;
     }
 
-    public void setContact(String contact) {
-        this.contact = contact;
+    public void setCotact(String cotact) {
+        this.cotact = cotact;
     }
 
     public String getBlood() {

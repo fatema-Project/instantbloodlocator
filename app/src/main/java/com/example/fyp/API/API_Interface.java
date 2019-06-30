@@ -13,7 +13,7 @@ import retrofit2.http.Query;
 
 public interface API_Interface {
 
-    @POST("Api/AttendanceManager/public/send_notification")
+    @POST("Api/AttandanceManager/public/send_notification")
     Call<NotificationResponse> send_notification(
             @Body RequestBody jsonBody
     );

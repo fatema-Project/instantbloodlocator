@@ -103,24 +103,24 @@ public class profileAct extends AppCompatActivity implements View.OnClickListene
         String address = paddress.getText().toString().trim();
         String are = area.getText().toString().trim();
         String bloodt = blood.getText().toString().trim();
-        String string1 = "nazimabad";
+       /* String string1 = "nazimabad";
         String string2 = "northkarachi";
         String string3= "northnazimabad";
         String string4="defence";
         String string5="bahadurabad";
         String string6="clifton";
         String string7="gulshaneiqbal";
-
+*/
         userinformatio userinformatio = new userinformatio(name, cont, address, are, bloodt);
 
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
-
+        databaseReference.child(user.getUid()).setValue(userinformatio);
 
         Toast.makeText(this, "information saved..", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(getApplicationContext(), profileact2.class));
 
-        if (are.equalsIgnoreCase(string1)){
+        /*if (are.equalsIgnoreCase(string1)){
             nazimabad nazimabad = new nazimabad(name, cont, are);
             databaseReference.child("nazimabad").child(user.getUid()).setValue(nazimabad);
          }
@@ -158,7 +158,7 @@ public class profileAct extends AppCompatActivity implements View.OnClickListene
             gulshaneiqbal gulshaneiqbal= new gulshaneiqbal(name, cont, are);
             databaseReference.child("gulshaneiqbal").child(user.getUid()).setValue(gulshaneiqbal);
         }
-
+*/
     }
         @Override
         public void onClick (View view){

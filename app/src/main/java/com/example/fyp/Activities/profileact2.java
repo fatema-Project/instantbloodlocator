@@ -1,9 +1,6 @@
 package com.example.fyp.Activities;
 
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
 import android.content.Intent;
-import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.fyp.API.APIClient;
 import com.example.fyp.API.API_Interface;
 import com.example.fyp.Models.Notification;
 import com.example.fyp.Models.NotificationResponse;
@@ -106,16 +102,19 @@ public class profileact2 extends AppCompatActivity {
 
                 }
                 user = FirebaseAuth.getInstance().getCurrentUser();
+                String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-                String userId = "user.getUid()";
-                databaseReference.child("Registration").child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
+                Log.d("adil", "onDataChange: " + userId);
+
+                //  String userId = "";
+                databaseReference.child(userId).addListenerForSingleValueEvent(new  ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         UserRegistration user = dataSnapshot.getValue(UserRegistration.class);
 
                         Notification notification = new Notification(
                                 "Urgent Blood Required - " + user.getFname() ,
-                                "Details are: - " ,
+                                "Firstname: " + user.getFname() + ", Blood Group: " + user.getBlood(),
                                 device_token);
 
                         Gson gson = new Gson();
@@ -146,7 +145,7 @@ public class profileact2 extends AppCompatActivity {
 
     private void sendNotification(String jsonToSend) throws JSONException {
 
-        apiInterface = APIClient.getClient().create(API_Interface.class);
+
 
         final RequestBody body = RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"), (new JSONObject(jsonToSend)).toString());
 

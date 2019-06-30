@@ -7,13 +7,13 @@ import com.google.gson.annotations.SerializedName;
 public class Notification {
 
     @SerializedName("title")
-    @Expose
+
     private String title;
     @SerializedName("msg")
-    @Expose
+
     private String msg;
     @SerializedName("device_token")
-    @Expose
+
     private List<String> deviceToken = null;
 
     public Notification(String title, String msg, List<String> deviceToken) {
