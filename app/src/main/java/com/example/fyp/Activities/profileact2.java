@@ -162,7 +162,7 @@ public class profileact2 extends AppCompatActivity {
                 if (response.isSuccessful()) {
 
                     NotificationResponse notificationResponse = response.body();
-                    Log.d("adil", "onResponse: " + notificationResponse.getSuccess());
+                    Log.d("adil", "onResponse: " + notificationResponse);
 
                     Toast.makeText(profileact2.this, "Notifications Send.", Toast.LENGTH_SHORT).show();
                 }
